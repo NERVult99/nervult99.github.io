@@ -1,92 +1,99 @@
-/* General Reset */
-body, h1, h2, h3, p, ul, li, a, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* General Styles */
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
     line-height: 1.6;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 header {
-    background: #007BFF;
-    color: white;
-    padding: 1rem 0;
+    background-color: #1f1f1f;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    color: #ffffff;
+    margin: 0;
 }
 
-header nav ul {
+nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
-    justify-content: space-around;
+    padding: 0;
+    margin: 1rem 0 0;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #bb86fc;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    background: white;
-    color: #007BFF;
+nav ul li a:hover {
+    background-color: #bb86fc;
+    color: #121212;
 }
 
-section {
-    padding: 2rem 0;
+.section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-section h2 {
-    margin-bottom: 1rem;
-    color: #007BFF;
+.section h2 {
+    color: #bb86fc;
+    text-align: center;
 }
 
-.service {
-    margin-bottom: 1.5rem;
+.section ul {
+    list-style: none;
+    padding: 0;
 }
 
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    margin-bottom: 1rem;
+.section ul li {
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 0.5rem 0;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    transition: transform 0.2s;
 }
 
-form button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #0056b3;
+.section ul li:hover {
+    transform: scale(1.05);
 }
 
 footer {
-    background: #333;
-    color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin-top: 2rem;
+}
+
+footer p {
+    color: #e0e0e0;
+}
+
+a {
+    color: #bb86fc;
+}
+
+a:hover {
+    color: #ffffff;
 }
