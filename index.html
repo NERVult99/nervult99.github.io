@@ -3,66 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator with Easter Egg</title>
+    <title>Stylish Calculator with Easter Egg</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f9;
+            background: radial-gradient(circle, #4facfe, #00f2fe);
+            color: #fff;
         }
 
         .calculator {
-            background: #ffffff;
+            background: rgba(0, 0, 0, 0.6);
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(12px);
             text-align: center;
-            width: 300px;
+            width: 350px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .calculator:hover {
+            transform: scale(1.05);
         }
 
         .display {
             width: 100%;
-            height: 50px;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            height: 60px;
+            font-size: 2rem;
+            margin-bottom: 20px;
             text-align: right;
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #f9f9f9;
+            border: none;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            outline: none;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .buttons {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
+            gap: 15px;
         }
 
         button {
-            padding: 15px;
-            font-size: 1rem;
+            padding: 18px;
+            font-size: 1.2rem;
             border: none;
-            border-radius: 5px;
-            background: #007bff;
-            color: white;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         button:hover {
-            background: #0056b3;
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            transform: scale(1.1);
+        }
+
+        button:active {
+            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.4);
         }
 
         button.special {
-            background: #ff4757;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
         }
 
         button.special:hover {
-            background: #e84118;
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
         }
     </style>
 </head>
@@ -96,6 +112,7 @@
 
     <script>
         const display = document.getElementById('display');
+        let easterEggTriggered = false;
 
         function appendValue(value) {
             display.value += value;
@@ -103,14 +120,16 @@
 
         function clearDisplay() {
             display.value = '';
+            easterEggTriggered = false;
         }
 
         function calculateResult() {
             try {
-                const result = eval(display.value);
-                if (display.value === '80085') {
+                if (display.value === '80085' && !easterEggTriggered) {
+                    easterEggTriggered = true;
                     window.location.href = 'https://xhamster.com';
                 } else {
+                    const result = eval(display.value);
                     display.value = result;
                 }
             } catch {
@@ -120,4 +139,3 @@
     </script>
 </body>
 </html>
-
