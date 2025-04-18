@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "./",  // Relative path for GitHub Pages deployment
+  base: "/nervult99.github.io/",  // Relative path for GitHub Pages deployment
 }));
