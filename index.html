@@ -1,222 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nervult-vision-site</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nervult</title>
-  <style>
-    :root {
-      --bg-color: #121212;
-      --text-color: #f0f0f0;
-      --accent-color: #00bcd4;
-      --card-bg: #1e1e1e;
-    }
+    <meta property="og:title" content="nervult-vision-site" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
 
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #1a1a1a;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: var(--accent-color);
-    }
-
-    nav a {
-      color: var(--text-color);
-      margin: 0 1rem;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent-color);
-    }
-
-    .social-icons a {
-      color: var(--text-color);
-      margin-left: 0.5rem;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: var(--accent-color);
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: var(--text-color);
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--accent-color);
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .project-card {
-      background-color: var(--card-bg);
-      padding: 1rem;
-      border-radius: 10px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
-    }
-
-    .contact-links a {
-      display: inline-block;
-      margin: 0.5rem;
-      font-size: 1.5rem;
-      color: var(--text-color);
-      transition: color 0.3s;
-    }
-
-    .contact-links a:hover {
-      color: var(--accent-color);
-    }
-
-    footer {
-      background-color: #1a1a1a;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      nav, .social-icons {
-        display: none;
-      }
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const projects = [
-        { title: "DeepNet AI", description: "An AI research project exploring neural architecture search.", icon: "🤖" },
-        { title: "CyberSentinel", description: "Cybersecurity toolkit for small businesses.", icon: "🛡" },
-        { title: "ChainConnect", description: "Blockchain-based community platform.", icon: "🔗" }
-      ];
-
-      const container = document.getElementById('project-list');
-      projects.forEach(project => {
-        const card = document.createElement('div');
-        card.className = 'project-card';
-        card.innerHTML = `
-          <h3>${project.icon} ${project.title}</h3>
-          <p>${project.description}</p>
-        `;
-        container.appendChild(card);
-      });
-    });
-  </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-</head>
-
-<body>
-  <header>
-    <div class="logo">nervult99</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="social-icons">
-      <a href="mailto:nervult@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/NERVult99" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://discord.gg/JFWCzB52" target="_blank"><i class="fab fa-discord"></i></a>
-      <a href="https://www.instagram.com/nervult_org/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@NERVult" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://reddit.com/user/nervult" target="_blank"><i class="fab fa-reddit"></i></a>
-      <a href="https://x.com/nervult" target="_blank"><i class="fab fa-x-twitter"></i></a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h1>Welcome to Nervult99</h1>
-      <p>Innovating the future, one project at a time.</p>
-    </section>
-
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We're a tech-driven organization focused on pushing boundaries through innovative projects in deep tech, AI, and digital communities.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Our Projects</h2>
-      <div id="project-list" class="projects-grid">
-        <!-- Projects inserted by JS -->
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <div class="contact-links">
-        <a href="mailto:nervult@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/NERVult99" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://discord.gg/JFWCzB52" target="_blank"><i class="fab fa-discord"></i></a>
-        <a href="https://www.instagram.com/nervult_org/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@NERVult" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://reddit.com/user/nervult" target="_blank"><i class="fab fa-reddit"></i></a>
-        <a href="https://x.com/nervult" target="_blank"><i class="fab fa-x-twitter"></i></a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Nervult99. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="mailto:nervult@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/NERVult99" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://discord.gg/JFWCzB52" target="_blank"><i class="fab fa-discord"></i></a>
-      <a href="https://www.instagram.com/nervult_org/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@NERVult" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://reddit.com/user/nervult" target="_blank"><i class="fab fa-reddit"></i></a>
-      <a href="https://x.com/nervult" target="_blank"><i class="fab fa-x-twitter"></i></a>
-    </div>
-  </footer>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
-
