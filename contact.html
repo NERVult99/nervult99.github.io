@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nervult Nexus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <span class="logo-main">Nervult</span> <span class="logo-last">Nexus</span>
+            </a>
+            <nav class="main-nav">
+                <ul></ul> <!-- Populated by JS -->
+            </nav>
+            <div class="header-social-links"></div> <!-- Populated by JS -->
+            <button class="mobile-nav-trigger" aria-label="Open navigation menu">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+             <a href="index.html" class="logo-link">
+                <span class="logo-main">Nervult</span> <span class="logo-last">Nexus</span>
+            </a>
+            <button class="mobile-nav-close" aria-label="Close navigation menu">
+                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav-links"><ul></ul></nav> <!-- Populated by JS -->
+        <div class="mobile-nav-footer">
+            <div class="mobile-nav-social-links"></div> <!-- Populated by JS -->
+            <p class="mobile-nav-copyright"></p> <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="space-y-12">
+            <section class="text-center py-12 rounded-lg shadow-lg" style="background-color: hsl(var(--card-background)); padding: 3rem 1rem;">
+                 <div style="width: 4rem; height: 4rem; margin: 0 auto 1rem; color: hsl(var(--accent-color));">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.511l7.406 4.443a.998.998 0 0 0 1.188 0L20 6.51V6H4zm0 10.489V8.269l7.406 4.443a.998.998 0 0 0 1.188 0L20 8.27v8.22H4z"></path></svg>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-4">Get In Touch</h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+                    We're always excited to connect with new people. Whether you have a question, a project idea, or just want to say hello, feel free to reach out.
+                </p>
+            </section>
+
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="card shadow-xl contact-form-card">
+                    <div class="card-header">
+                        <h2 class="card-title">Send Us a Message</h2>
+                        <p class="card-description">Fill out the form below, and we'll get back to you as soon as possible.</p>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="card-content space-y-4">
+                            <div id="form-message" role="alert"></div>
+                            <div>
+                                <label for="name">Full Name</label>
+                                <input id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                            </div>
+                            <div>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <div class="card-footer" style="justify-content: flex-start;">
+                             <button type="submit" class="button button-accent icon-button">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="card shadow-xl">
+                        <div class="card-header">
+                            <h3 class="card-title">Contact Information</h3>
+                        </div>
+                        <div class="card-content space-y-3">
+                            <p class="contact-info-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.511l7.406 4.443a.998.998 0 0 0 1.188 0L20 6.51V6H4zm0 10.489V8.269l7.406 4.443a.998.998 0 0 0 1.188 0L20 8.27v8.22H4z"></path></svg>
+                                Email: <a id="contact-email-link" href="#" class="ml-1"></a>
+                            </p>
+                            <p class="text-muted-foreground">
+                                We typically respond within 1-2 business days.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl">
+                        <div class="card-header">
+                            <h3 class="card-title">Office Hours (Virtual)</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-muted-foreground">Monday - Friday: 9:00 AM - 5:00 PM (EST)</p>
+                            <p class="text-sm text-muted-foreground mt-1" style="font-size:0.875rem; margin-top:0.25rem;">We operate remotely, connecting talent from across the globe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-copyright"></p> <!-- Populated by JS -->
+            <div class="footer-social-links"></div> <!-- Populated by JS -->
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

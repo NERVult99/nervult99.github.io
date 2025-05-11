@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nervult Nexus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <span class="logo-main">Nervult</span> <span class="logo-last">Nexus</span>
+            </a>
+            <nav class="main-nav">
+                <ul></ul> <!-- Populated by JS -->
+            </nav>
+            <div class="header-social-links"></div> <!-- Populated by JS -->
+            <button class="mobile-nav-trigger" aria-label="Open navigation menu">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo-link">
+                <span class="logo-main">Nervult</span> <span class="logo-last">Nexus</span>
+            </a>
+            <button class="mobile-nav-close" aria-label="Close navigation menu">
+                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav-links"><ul></ul></nav> <!-- Populated by JS -->
+        <div class="mobile-nav-footer">
+            <div class="mobile-nav-social-links"></div> <!-- Populated by JS -->
+            <p class="mobile-nav-copyright"></p> <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="space-y-12">
+            <section class="text-center py-12 rounded-lg shadow-lg" style="background-color: hsl(var(--card-background)); padding: 3rem 1rem;">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-4">About Nervult Nexus</h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+                    We are a passionate collective dedicated to driving innovation and fostering collaboration. Our mission is to build impactful solutions that address real-world challenges and empower communities.
+                </p>
+            </section>
+
+            <section>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight text-accent mb-4">Our Vision</h2>
+                        <p class="text-lg text-muted-foreground mb-4">
+                            To be a leading force in technological advancement and community engagement, creating a future where innovation is accessible and beneficial for all. We envision a world where collaborative efforts lead to sustainable and equitable progress.
+                        </p>
+                        <p class="text-lg text-muted-foreground">
+                            Nervult Nexus serves as the central hub for our initiatives, projects, and community interactions. It's where ideas meet execution and collaboration sparks innovation.
+                        </p>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-xl">
+                        <img 
+                            src="https://picsum.photos/seed/vision/800/600" 
+                            alt="Abstract image representing vision and future" 
+                            width="800" 
+                            height="600"
+                            style="width: 100%; height: auto; object-fit: cover; transition: transform 0.5s ease; transform-origin: center center;"
+                            onmouseover="this.style.transform='scale(1.05)';"
+                            onmouseout="this.style.transform='scale(1)';"
+                            data-ai-hint="futuristic cityscape"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-3xl font-bold tracking-tight text-center text-accent mb-8">Our Core Values</h2>
+                <div id="core-values-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Core values will be populated by JS -->
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-3xl font-bold tracking-tight text-center text-accent mb-8">Meet the Team (Preview)</h2>
+                <div id="team-members-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Team members will be populated by JS -->
+                </div>
+                <p class="text-center text-muted-foreground mt-8">
+                    ... and many other passionate contributors and collaborators!
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-copyright"></p> <!-- Populated by JS -->
+            <div class="footer-social-links"></div> <!-- Populated by JS -->
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

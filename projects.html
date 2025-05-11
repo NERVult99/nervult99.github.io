@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nervult Nexus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <span class="logo-main">Nervult</span> <span class="logo-last">Nexus</span>
+            </a>
+            <nav class="main-nav">
+                <ul></ul> <!-- Populated by JS -->
+            </nav>
+            <div class="header-social-links"></div> <!-- Populated by JS -->
+            <button class="mobile-nav-trigger" aria-label="Open navigation menu">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav-panel">
+        <div class="mobile-nav-header">
+             <a href="index.html" class="logo-link">
+                <span class="logo-main">Nervult</span> <span class="logo-last">Nexus</span>
+            </a>
+            <button class="mobile-nav-close" aria-label="Close navigation menu">
+                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav-links"><ul></ul></nav> <!-- Populated by JS -->
+        <div class="mobile-nav-footer">
+            <div class="mobile-nav-social-links"></div> <!-- Populated by JS -->
+            <p class="mobile-nav-copyright"></p> <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="space-y-12">
+            <section class="text-center py-12 rounded-lg shadow-lg" style="background-color: hsl(var(--card-background)); padding: 3rem 1rem;">
+                <div style="width: 4rem; height: 4rem; margin: 0 auto 1rem; color: hsl(var(--accent-color));">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2zM7 17v-7h2v7H7zm4 0v-7h2v7h-2zm4 0v-4h2v4h-2z"></path></svg>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary mb-4">Our Projects</h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+                    Explore the diverse range of projects undertaken by Nervult. Each project reflects our commitment to innovation, collaboration, and creating impactful solutions.
+                </p>
+            </section>
+
+            <section>
+                <div id="all-projects-grid" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project cards will be injected here by JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-copyright"></p> <!-- Populated by JS -->
+            <div class="footer-social-links"></div> <!-- Populated by JS -->
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
